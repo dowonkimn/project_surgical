@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/isaac-sim/kit/python/bin/python3 -c \"import debugpy; print\\(''debugpy OK'', debugpy.__version__\\)\")",
+      "Read(//root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/debugpy/**)",
+      "Read(//root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs/**)",
+      "Read(//root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/**)",
+      "Read(//root/.vscode-server/extensions/**)",
+      "Bash(/dev/null /isaac-sim/kit/python/bin/pip3 install debugpy)",
+      "Bash(PYTHONPATH=\"/root/.vscode-server/extensions/ms-python.debugpy-2025.18.0-linux-x64/bundled/libs:$PYTHONPATH\" /isaac-sim/kit/python/bin/python3 -c \"import debugpy; print\\(''debugpy OK'', debugpy.__version__\\)\")"
+    ]
+  }
+}

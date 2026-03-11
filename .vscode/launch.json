@@ -1,0 +1,31 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+                {
+            "name": "Teleoperation",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "/workspace/orbit-surgical/source/standalone/environments/teleoperation/teleop_se3_agent.py",
+            "console": "integratedTerminal",
+            "python": "/isaac-sim/kit/python/bin/python3",
+            "envFile": "${workspaceFolder}/.vscode/.python_samples.env",
+            "env": {
+                // "CUDA_VISIBLE_DEVICES" : "0",
+                "LIVESTREAM" : "2",
+                "ENABLE_CAMERAS" : "1",
+                "HEADLESS" : "1"
+            },
+            "preLaunchTask": "setup_python_env",
+            "args": [
+                "--device", "cuda",
+                "--task", "Isaac-Lift-Needle-PSM-IK-Rel-v0",
+                "--num_envs", "1",
+                "--teleop_device", "keyboard",
+            ],
+        }
+    ]
+}
